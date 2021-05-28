@@ -39,4 +39,4 @@ jobs:
           owner           VARCHAR(150) NOT NULL,                
           birth           DATE NOT NULL,                       
           PRIMARY KEY     (id)                             
-          ); SELECT * FROM TABLE pets;"
+          ); SELECT * FROM TABLE cats;"
