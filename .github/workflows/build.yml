@@ -35,4 +35,4 @@ jobs:
           mysql --host mysql -uroot -ppassword -e "SHOW DATABASES"
       - name: "demo command"
         run: |
-          mysql --host mysql -uroot -ppassword -e "CREATE DATABASE pets; USE pets; CREATE TABLE cats( id INT unsigned NOT NULL AUTO_INCREMENT,name VARCHAR(150) NOT NULL,owner VARCHAR(150) NOT NULL,birth DATE NOT NULL,PRIMARY KEY (id)); SELECT * FROM TABLE cats;"
+          mysql --host mysql -uroot -ppassword -e "CREATE DATABASE movies1;USE movies1;CREATE TABLE movies1(title VARCHAR(50) NOT NULL,genre VARCHAR(30) NOT NULL,director VARCHAR(60) NOT NULL,release_year INT NOT NULL,PRIMARY KEY(title));INSERT INTO movies1 VALUE ("Joker", "psychological thriller", "Todd Phillips", 2019);"
